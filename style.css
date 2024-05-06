@@ -1,0 +1,218 @@
+/*************************************************** CSS for nav bar********************************************/
+nav{
+    background-color: purple;
+    height: 50px;
+}
+ul{
+    padding-left: 50%;
+    position: absolute;
+    top: 14px;
+    
+
+    
+}
+ul li{
+    display: inline;
+    margin-left: 70px;
+    font-weight: bold;
+   
+   
+   
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+ul a:hover{
+    color: rgb(158, 93, 158);
+}
+nav h1{
+    position: absolute;
+    top:2px;
+    margin-left: 5%;
+    color: rgba(182, 179, 179, 0.7);
+}
+nav h1 span{
+    font-size: 30px;
+    color:pink ;
+}
+nav h1::first-letter{
+    font-size: 30px;
+    color:white;
+}
+/* *******************************************CSS for footer***************************************************/
+footer {
+    position: absolute;
+    
+    width: 100%;
+    background-color:rgb(146, 89, 146); /* Adjust the background color as needed */
+    text-align: center;
+   z-index: 1;
+  
+    color: black;
+  }
+  /***************************************make css desgin for h1 text=> slider*********************************/
+h1{
+    text-align: center;
+    color: crimson;
+}
+/*****************************************CSS for slider part ************************************************/
+.slide >img{
+    width: 100%;
+    height:auto;
+    display: inline-flexbox;
+   margin-right: 5%;
+    align-content: center;
+    justify-content: center;
+    
+}
+.slide{
+    display: inline-flex;
+    transition: opacity 2s ease;
+    margin-left: 10%;
+    animation: slide-animation 25s infinite;
+   
+   
+}
+.slides{
+    display:block;
+    overflow: hidden;
+}
+@keyframes slide-animation {
+    from { opacity: .6 }
+    to { opacity: 1 }
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    10% {
+        transform: translateX(-10%);
+    }
+    33.33% {
+        transform: translateX(-110%);
+    }
+    66.66% {
+        transform: translateX(-220%);
+    }
+    90% {
+        transform: translateX(-320%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+/************************************CSS for shape #1 about Animation Texts ***********************************/
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .ml6 span{
+    color: purple;
+  }
+/**************************************CSS for shape #2 about Animation Texts *******************************/
+  .ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: rgba(180, 125, 180);
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(131, 5, 131);
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+  
+/***********************************CSS for shape #3 about Animation Texts ***********************************/
+  .ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+  }
+  
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+  .ml10 span{
+    color: blueviolet;
+  }
+/***************************************** CSS for Glowing Text**************************************************/
+  .glow-text-container {
+    background: black;
+    height: 30vh;
+    text-align: center;
+}
+
+.glow-text {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: #9821a5;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  /********************************************EMD**************************************************************/
